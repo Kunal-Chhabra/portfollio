@@ -5,7 +5,7 @@ function greeting(name) {
   }
 function submitingToAPI(){
   return new Promise((res)=>{
-    setTimeout(res,3000);
+    setTimeout(res,1000);
   });
 }
 
