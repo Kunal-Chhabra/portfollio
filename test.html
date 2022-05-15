@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ <body>
+     <img id="img2" src="./1 (1).jpg">
+    <center>
+        <h1 style="color: green">About Me</h1>
+        <button type="button" 
+            onclick="changeSizeByBtn(15)" name="btn1">
+            -A
+        </button>
+          
+        <button type="button" 
+            onclick="changeSizeByBtn(20)" name="btn2">
+            A
+        </button>
+  
+        <button type="button" onclick="changeSizeByBtn(25)"
+            name="btn3">
+            A+
+        </button>
+        <br /><br />
+       
+        <div style="padding: 20px; margin: 50px;
+            font-size: 20px; border: 5px solid green;" 
+            id="container" class="container">
+            <p>
+                Hey, my name is Kunal. I am a front-end developer. I enjoys creating beautiful interface designs. I also loves coding and always strives to write elegant and efficient code, whether it is HTML, CSS , JS ,
+                REACT JS as well as BOOTSTRAP and JQUERY.
+            </p>
+        </div>      
+    </center>
+  
+    <script>
+        var cont = document.getElementById("container");
+        function changeSizeByBtn(size) { 
+            // Set value of the parameter as fontSize
+            cont.style.fontSize = size;
+           
+        
+    }
+
+      
+    </script>
+</body>
+  
+</html>

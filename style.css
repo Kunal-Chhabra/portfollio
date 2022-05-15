@@ -1,0 +1,265 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url(https://i.pinimg.com/originals/8e/66/9a/8e669a2007b8ca02a928466b979ccecb.jpg);
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+    
+}
+.logo{
+    max-height: 75px;
+
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color:blue;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: blue;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.btn{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: blue;
+    border: 2px solid blue;
+    margin-left:400px;
+}
+.btn:hover{
+    background: transparent;
+    border-color: blue;
+    color: blue;
+}
+.content{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+.content .title{
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%,#fd4766 79.69%,blue,white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content h1{
+    color: #fff;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 70%;
+}
+.content h1 span{
+    color: blue;
+}
+.content p{
+    width: 55%;
+    color: gainsboro;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+#about{
+    display:flex;
+    flex-direction:column; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    padding:50px;
+    margin:10px;
+   
+    text-shadow: #7644ff;
+
+
+}
+#pic{
+  display:flex;
+  margin-right: 100px;
+ 
+
+
+}
+.headings{
+    text-align: center;
+    justify-content: center;
+    text-shadow: #7644ff;
+    margin-right: 100px;
+}
+#img2{
+    size:100px;
+    margin-left: 50px;
+}
+.intro{
+    margin-left: 50px;
+
+}
+#services{
+    display :flex;
+    flex-direction:column;
+    padding:20px;
+}
+
+.row{
+    display:flex;
+}
+.box{
+    display: flex;
+    flex-direction:column;
+    width:360px;
+    height:450px;
+    border :3px solid black;
+    margin:20px;
+    align-items: center;
+    text-align: justify;
+    padding :10px;
+    border-radius:15px;
+    background: linear-gradient(to top,rgb(255,45,45)50%,white 50%) ;
+    background-size: 100% 200%;
+    transition: all .7s;
+
+
+}
+.box:hover{
+    background-position:left bottom;
+    color: white;
+    border: 5px solid black;
+    box-shadow: 0 0 30px black ;
+
+}
+
+.box img{
+    width: 100px;
+    height: 100px;
+}
+#services{
+    display :flex;
+    flex-direction:column;
+    padding:20px;
+}
+.row{
+    display:flex;
+
+}
+.box{
+    display: flex;
+    flex-direction:column;
+    width:360px;
+    height:450px;
+    border :3px solid black;
+    margin:20px;
+    align-items: center;
+    text-align: justify;
+    padding :10px;
+    border-radius:15px;
+    background: linear-gradient(to top,rgb(8, 133, 191)50%,white 50%) ;
+    background-size: 100% 200%;
+    transition: all .7s;
+
+
+}
+.box:hover{
+    background-position:left bottom;
+    /*color: white;*/
+    border: 5px solid black;
+    box-shadow: 0 0 30px black ;
+    
+}
+#im{
+    width: 60%;
+    height: 45%;
+}
+#op{
+    
+    width:40%;
+    height:40%;
+}
+#heading{
+    text-justify: center;
+    text-align: center;
+    font-size: xx-large;
+}
+.hero_s {
+    width: 100%;
+    height: 15vh;
+    
+    background-size: cover;
+
+    
+}
+#nav_1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+    width:100%;
+    background-color: black;
+    height: 13vh;
+    position:fixed;
+}
+.head{
+    text-align: center;
+    text-justify: center;
+    font-size:40px;
+    font-family: cursive;
+
+}
+
+.map{
+    width: 50%;
+float: center;
+}
+
+.check{
+    width: 100% ;
+}
+.form{
+    float: right;
+}

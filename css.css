@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body {
+    display:flex;
+    justify-content: top;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("https://www.renderhub.com/renderhub/black-and-white-3d-wallpaper/black-and-white-3d-wallpaper_1920x1080.jpg");
+}
+#logo{
+    margin-right: 600px;
+    color:lawngreen;
+    font-family:cursive;
+    font-size: x-large;
+}
+h2{
+    position:relative;
+    font-size:30vh;
+    color:black;
+    -webkit-text-stroke: 0.3vw white;
+    text-transform:uppercase ;
+}
+h2::before{
+    content: attr(data-text);
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%  ;
+    height:100%;
+    color: blue;
+    border-right: 2px solid black;
+    overflow: hidden;
+    animation:animate 7s linear infinite;
+
+}
+@keyframes animate{
+0%,10%,100%{
+    width:0%;
+}
+60%,90%{
+    width:100%
+
+}
+}
+#h1{
+   font-size: 10vh;
+   color: red;
+   max-width: 100%;
+}
+/*Navbar*/
+.navbar{
+    display:flex;
+    width: 100%;
+    justify-content:right;
+    align-items: right;
+    font-size: large;
+    /* background-color: navy; */
+    opacity: 1;
+    background-color:none;
+    color:aliceblue;
+    position:sticky;
+    top:0px;
+    margin-bottom:105%;
+    position: fixed;
+}
+.navbar ul{
+    display: flex;
+    font-size: x-large;
+    list-style:none;
+    margin :20px 0px;
+
+}
+.navbar ul li{
+    font-family : century;
+    font-size : 1.1rem;
+    font-weight:bold;
+}
+.navbar ul li a{
+    text-decoration:none;
+    color:white;
+    padding: 10px 25px;
+    transition:all ease;
+    
+
+}
+.navbar ul li a:hover {
+    background-color:rgb(7, 6, 6);
+    border-radius: 10%;
+    color:white;
+    box-shadow: 0 0 100px white;
+}
+#img1{
+    height: 80px;
+}
+
+
+

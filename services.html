@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+        <div class="hero_s">
+            <nav id="nav_1">
+              <a href="./main.html">  <img src="./logo.jpg" class="logo"></a>
+                <ul>
+                    <li><a href="./main.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./services.html">Service</a></li>
+                    
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+               
+            </nav>
+            </div>
+            </section>
+
+
+
+    <section id="services">
+        <h1 class="head">Services</h1>
+        <div class="row" id="serviceContainer">
+            <script>
+                const servicePrototype = {
+                    body: 'amet consectetur adipisicing elit. Architecto aut dolore aspernatur culpa veniam nihil suscipit. Debitis quia autem officia dicta id at! Suscipit in ipsa itaque distinctio deserunt molestias.'
+                }
+                function Service(heading) {
+                    this.heading = heading;
+                    this.body = heading + this.body;
+                }
+                Service.prototype = servicePrototype;
+                Service.prototype.constructor = Service;
+
+
+                let service1 = new Service('Testing/Debugging');
+                let service2 = new Service('Website Design');
+                let service3 = new Service('Responsive Design');
+
+                var getService = function(img){
+                    return `
+                        <div class="box">
+                            <img src="${img}">
+                            <h1 class="headings">${this.heading}</h1>
+                            <p style="color:white";>${this.body}</p>
+                        </div>
+                     `
+                };
+                const bindedFunc = getService.bind(service3,'./bugga.png')
+                const dom = `
+                    ${getService.call(service1,'./web devlopment logo.png')}
+                    ${getService.apply(service2,['./web-logo.fw_.png'])}
+                    ${bindedFunc()}
+                `
+                document.getElementById('serviceContainer').innerHTML = dom;
+            </script>
+        </div>
+
+    </section>
+    <!-- <script defer src="app.js"></script> -->
+</body>
+</html>
